@@ -1,0 +1,261 @@
+.css-generator-page {
+    padding: 30px;
+    background: #f4f6f9;
+    min-height: 100vh;
+    color: #222;
+}
+
+.css-generator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.css-generator-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.css-generator-header p {
+    color: #777;
+}
+
+.back-dashboard-button {
+    background: #2874f0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.css-generator-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.css-controls,
+.css-preview-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    min-width: 0;
+}
+
+.css-controls h2,
+.css-preview-section h2 {
+    margin-bottom: 22px;
+    font-size: 21px;
+}
+
+.control-group {
+    margin-bottom: 22px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.control-group select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+}
+
+.control-group input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.control-group input[type="color"] {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.theme-buttons button {
+    flex: 1;
+    padding: 11px 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.theme-buttons button.active {
+    background: #2874f0;
+    color: white;
+    border-color: #2874f0;
+}
+
+.generate-css-button,
+.apply-css-button,
+.reset-css-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.generate-css-button {
+    background: #2874f0;
+    color: white;
+}
+
+.apply-css-button {
+    background: #198754;
+    color: white;
+}
+
+.reset-css-button {
+    background: #e9ecef;
+    color: #333;
+}
+
+.css-live-preview {
+    min-height: 280px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.css-live-preview h2 {
+    margin-bottom: 15px;
+}
+
+.css-live-preview p {
+    line-height: 1.6;
+}
+
+.preview-product-card {
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.preview-product-card button {
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
+}
+
+.css-applied-message {
+    padding: 14px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.generated-css-section {
+    margin-top: 25px;
+}
+
+.generated-css-section p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.generated-css-output {
+    width: 100%;
+    height: 380px;
+    padding: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+    background: #20242c;
+    color: #d7e2f0;
+    border: none;
+    border-radius: 7px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.css-output-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.css-output-actions button {
+    flex: 1;
+    background: #198754;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.css-output-actions button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.css-instructions {
+    background: #f4f6f9;
+    padding: 18px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.css-instructions h3 {
+    margin-bottom: 12px;
+}
+
+.css-instructions ol {
+    padding-left: 22px;
+}
+
+.css-instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+    .css-generator-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .css-generator-page {
+        padding: 15px;
+    }
+
+    .css-controls,
+    .css-preview-section {
+        padding: 18px;
+    }
+
+    .css-generator-header h1 {
+        font-size: 23px;
+    }
+
+    .css-output-actions {
+        flex-direction: column;
+    }
+}
